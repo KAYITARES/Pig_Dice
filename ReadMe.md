@@ -1,6 +1,6 @@
 # Pig-Dice
 
-#### Rolling Pig Dice Game (for learning purpose), published on, Tuesday,01st.November.2022
+#### Rolling Pig Dice Game (for learning purpose), published on, Monday,07th.November.2022
 
 #### By **KAYITARE Cynthia**
 
