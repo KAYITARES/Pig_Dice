@@ -16,13 +16,27 @@ let current0El = document.querySelector("#current--0");
 let current01El = document.querySelector("#current--1");
 
 //starting games conditions
-score0El.textContent = 0;
-score1El.textContent = 0;
-diceRoll.classList.add("hidden");
-let activePlayer = 0;
-let score = [0, 0];
-let currentScore = 0;
-let playing = true;
+
+let activePlayer, score, currentScore, playing;
+
+let init = () => {
+  score = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
+
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  current01El.textContent = 0;
+  current0El.textContent = 0;
+
+  diceRoll.classList.add("hidden");
+  player0El.classList.remove("player--winner");
+  player1El.classList.remove("player--winner");
+  player0El.classList.add("player--active");
+  player1El.classList.remove("player--active");
+};
+init();
 
 //switch player function
 let switchPlayer = () => {
@@ -82,6 +96,8 @@ btnHold.addEventListener("click", () => {
     }
   }
 });
+//new game
+btnNew.addEventListener("click", init);
 
 //game rules functions
 gameRules.addEventListener("click", () => {

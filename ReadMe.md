@@ -42,7 +42,7 @@ An output of one results in a zero of accumulated points.
 
 ## Preview
 
-**[Click here](https://KAYITARES.github.io/Pice-Dice)** to see the live site.
+**[Click here](https://KAYITARES.github.io/Pig_Dice)** to see the live site.
 
 ## Known Bugs
 
